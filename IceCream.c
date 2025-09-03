@@ -46,7 +46,12 @@ for (flavor = vanilla; flavor <= strawberry; flavor++) {
 }
 
 //Print out the resulting flavors and their sum with Bob's total sales.
+printf("\nTotal sales per flavor:\n");
+  for (flavor = vanilla; flavor <= strawberry; flavor++) {
+    printf("%s: $%.2f\n", flavorNames[flavor], totalSales[flavor]);
+  }
 
+printf("\nBob's total sales: $%.2f\n", bobTotal);
 
 return 0;
 }
